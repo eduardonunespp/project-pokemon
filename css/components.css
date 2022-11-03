@@ -1,0 +1,29 @@
+.tag{
+    width: 121px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(194, 0, 0, 0.12);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #C20001;
+}
