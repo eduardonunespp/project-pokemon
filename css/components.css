@@ -49,7 +49,6 @@
         font-size: 14px;
         line-height: 150%;
         color: var(--type-ghost);
-    
 }
 
 .search{
@@ -693,7 +692,7 @@ button .fa-magnifying-glass{
 }
 
 .weak{
-    margin-bottom: 1.2rem;
+    margin-bottom: 3.2rem;
 }
 
 .weak h4{
@@ -725,6 +724,7 @@ button .fa-magnifying-glass{
     line-height: 16px;
     letter-spacing: -0.01em;
     color: #4D5053;
+    margin-bottom: 1.5rem;
 }
 
 .status .item{
