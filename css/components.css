@@ -98,7 +98,7 @@ button .fa-magnifying-glass{
 .filter .type-filter{
     width: 100px;
     height: 36px;
-    background-color: aliceblue;
+    background-color: transparent; 
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ button .fa-magnifying-glass{
 }
 
 .eletric span{
-    color: var(--type-eletricl);
+    color: var(--type-eletric);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.5em;
