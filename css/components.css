@@ -247,7 +247,7 @@ button .fa-magnifying-glass{
 
 .card-pokemon{
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
     height: 308px;
     background-color: #f1f1f1;
     box-shadow: 11px 10px 5px -5px rgba(183, 189, 194, 0.3);
@@ -467,9 +467,6 @@ button .fa-magnifying-glass{
     color: var(--type-fighting);
     background-color: rgba(196, 77, 97, 0.2);
 }
-
-
-
 
 .btn-load-more{
     width: 19.6rem;

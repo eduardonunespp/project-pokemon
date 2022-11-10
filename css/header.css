@@ -51,3 +51,17 @@ header p{
     }
 }
 
+
+@media (max-width: 768px){
+    header{
+        height: 8.2rem;
+        justify-content: space-between;
+    }
+    header .container{
+        padding: 0px 20px;
+    }
+    header img{
+        max-width: 12.9rem;
+        
+    }
+}

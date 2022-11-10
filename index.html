@@ -62,67 +62,82 @@
         </div>
     </section>
 
-    <section class="s-all-info-pokemons">
+
+      <section class="s-all-info-pokemons">
         <div class="container">
             <div class="top">
-                <h2>Select your Pokemón</h2>
+                <h2>Select your Pokemon</h2>
                 <div class="search">
                     <input type="text" id="search" name="search" placeholder="search pokemons">
                     <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
                 </div>
             </div>
             <div class="area-all">
-                <div class="left-container">
-                    <div class="filter">
-                    <button class="type-filter all">
-                        <div class="icon-button">
-                            <img src="img/icon-types/pokeball.svg" alt="">
-                        </div>
-                        <span>All</span>
-                    </button>
-                    <button class="type-filter ghost">
-                        <div class="icon-button">
-                            <img src="img/icon-types/ghost.svg" alt="">
-                        </div>
-                        <span>Ghost</span>
-                    </button>
-            
-                    <button class="type-filter stone">
-                        <div class="icon-button">
-                            <img src="img/icon-types/ground.svg" alt="">
-                        </div> 
-                        <span>Stone</span>
-                    </button>
-            
-                    <button class="type-filter grass">
-                        <div class="icon-button">
-                            <img src="img/icon-types/grass.svg" alt="">
-                        </div> 
-                        <span>Plants</span>
-                    </button>
-            
-                    <button class="type-filter dragon">
-                        <div class="icon-button">
-                            <img src="img/icon-types/dragon.svg" alt="">
-                        </div> 
-                        <span>Dragon</span>
-                    </button>
-            
-                    <button class="type-filter steel">
-                        <div class="icon-button">
-                            <img src="img/icon-types/steel.svg " alt="">
-                        </div> 
-                        <span>Metal</span>
-                    </button>
-            
-                    <button class="type-filter eletric">
-                        <div class="icon-button">
-                            <img src="img/icon-types/electric.svg" alt="">
-                        </div> 
-                        <span>Shock</span>
-                    </button>
-            
-                    </div>
+                <div class="filter">
+        
+
+                    <ul>
+                        <li>
+                            <button class="type-filter all">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/pokeball.svg" alt="">
+                                </div>
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="type-filter ghost">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/ghost.svg" alt="">
+                                </div>
+                                <span>Ghost</span>
+                            </button>
+                        </li>
+                        <li>
+
+                            <button class="type-filter stone">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/ground.svg" alt="">
+                                </div> 
+                                <span>Stone</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="type-filter grass">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/grass.svg" alt="">
+                                </div> 
+                                <span>Plants</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="type-filter dragon">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/dragon.svg" alt="">
+                                </div> 
+                                <span>Dragon</span>
+                            </button>
+                    
+                        </li>
+                        <li>
+                            <button class="type-filter steel">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/steel.svg " alt="">
+                                </div> 
+                                <span>Metal</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="type-filter eletric">
+                                <div class="icon-button">
+                                    <img src="img/icon-types/electric.svg" alt="">
+                                </div> 
+                                <span>Shock</span>
+                            </button>
+                        </li>
+                    </ul>
+                    
+                
                 </div>
                 <div class="right-container">
                     <div class="top-container">
@@ -131,7 +146,7 @@
                         </div>
                         <span><strong id="js-count-pokemons">150</strong> Pokemóns </span>
                     </div>
-                    <div class="all">
+                    <div class="right-all">
                         <button class="card-pokemon js-open-detals-pokemon grass">
                             <div class="image">
                                 <img src="img/bulbasaur.svg" alt="">
@@ -284,11 +299,10 @@
                     
                             </div>
                         </button>
-
-                        <button class="btn-load-more">Load More Pokemons</button>
                     
-                    </div>
+                    
                 </div>
+                <button class="btn-load-more">Load More Pokemons</button>
             </div>
         </div>
     </section>
