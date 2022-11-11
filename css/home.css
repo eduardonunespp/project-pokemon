@@ -320,6 +320,33 @@
         max-width: 62rem;
     }
 
+    .s-all-info-pokemons{
+        padding-top: -30.5rem;
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+    }
+
+    .s-all-info-pokemons .top{
+        display: block;
+        margin-bottom: 9.7rem;
+        padding: 0px 20px;
+    }
+
+    .top h2{
+        margin: 0 auto;
+        max-width: 500px;
+        text-align: normal;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .top .search{
+        margin: 0 auto;
+        max-width: 390px;
+    }
+
+
+
     
 }
 
