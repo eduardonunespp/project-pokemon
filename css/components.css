@@ -42,7 +42,6 @@
 }
 
 .blue-tag span{
-    
         font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
@@ -368,9 +367,6 @@ button .fa-magnifying-glass{
     background-color: rgba(196, 77, 97, 0.2);
 }
 
-
-
-
 .tag-type{
     display: inline-block;
     padding: 0.4rem 0rem;
@@ -660,7 +656,6 @@ button .fa-magnifying-glass{
     flex-flow: row wrap;
     margin-top: 1rem;
     margin-bottom: 0.8rem;
-
 }
 
 .type span{

@@ -58,10 +58,14 @@ header p{
         justify-content: space-between;
     }
     header .container{
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
     header img{
         max-width: 12.9rem;
         
     }
+    header p{
+        font-size: 1.0rem;
+    }
+    
 }

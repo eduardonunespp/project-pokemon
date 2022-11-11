@@ -133,6 +133,8 @@
 
 }
 
+
+
 @keyframes showPokemon {
     0%{
         transform: translateY(0px);
@@ -233,6 +235,94 @@
     color: #2F3133;
 }
 
+.select-custom {
+    display: none;
+}
+
+.right-container .select-custom{
+    position: relative;
+    margin-bottom: 5.5rem;
+    display: none;
+}
+
+.right-container .dropdown-select{
+    position: absolute;
+    top: 5.6rem;
+    width: 100%;
+    height: 223px;
+    border: 1px solid #91bcdd;
+    background-color: rgb(218, 218, 218);
+    border-top: 0px;
+    padding: 2.1rem;
+    z-index: 2;
+    overflow: auto;
+    border-radius: 0px 0px 5px 5px;
+    display: none;
+}
+
+.dropdown-select::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.dropdown-select::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+.dropdown-select::-webkit-scrollbar-thumb{
+    background-color: #3d75c2;
+    border-radius: 5px;
+}
+
+.dropdown-select li{
+    padding: 1.2rem 0;
+}
+
+.dropdown-select li:first-child{
+    padding: 0px;
+}
+
+.dropdown-select button{
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: transparent;
+}
+
+.dropdown-select span{
+    margin-left: 10px;
+}
+
+.dropdown-select button:first-child{
+    padding: 0px;
+}
+
+.dropdown-select .type-filter{
+    filter: grayscale(100%)
+}
+
+.dropdown-select .type-filter:hover{
+    filter: grayscale(0%);
+}
+
+.right-container .item-select{
+    cursor: pointer;
+    width: 100%;
+    height: 5.6rem;
+    border: 1px solid #A0AFBA;
+    background-image: url('../img/arrow-down-select.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: right 24px;
+    border-radius: 1rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
 @media(max-width: 1200px){
     .top .search{
         max-width: 32.3rem;
@@ -250,9 +340,6 @@
         padding-bottom: 4rem;
     }
 
-    .right-container .top-container{
-
-    }
 }
 
 
@@ -291,7 +378,7 @@
 
 @media(max-width: 560px){
     .main-area .text h1{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         margin-top: 2rem;
     }
 
@@ -321,7 +408,7 @@
     }
 
     .s-all-info-pokemons{
-        padding-top: -30.5rem;
+        
         padding-top: 12rem;
         padding-bottom: 4rem;
     }
@@ -338,11 +425,32 @@
         text-align: normal;
         text-align: center;
         margin-bottom: 3rem;
+        font-size: 32px;
     }
 
     .top .search{
         margin: 0 auto;
         max-width: 390px;
+    }
+
+    .s-all-info-pokemons .filter{
+        display: none;
+    }
+
+    .right-container .right-all{
+        grid-template-columns: 1fr;
+        grid-gap: 1.6rem;
+        max-width: 86%;
+        margin: 0 auto;
+        margin-bottom:  4.8rem;
+    }
+
+    .right-container .select-custom{
+        display: block;
+    }
+
+    .area-all .right-container{
+        width: 100%;
     }
 
 
