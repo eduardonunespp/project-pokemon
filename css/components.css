@@ -248,7 +248,7 @@ button .fa-magnifying-glass{
     width: 100%;
     max-width: 320px;
     height: 308px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     box-shadow: 11px 10px 5px -5px rgba(183, 189, 194, 0.3);
     border-radius: 10px;
     cursor: pointer;
@@ -510,8 +510,8 @@ button .fa-magnifying-glass{
 }
 
 .modal .box{
-    max-width: 100%;
-    width: 71rem;
+    width: 100%;
+    max-width: 71rem;
     height: 50.8rem;
     background-color: #ffffff;
     position: relative;
@@ -519,9 +519,51 @@ button .fa-magnifying-glass{
     border-radius: 16px;
     box-shadow: 0px 10px 40px rgba(13, 12, 71, 0.05);
     display: flex;
-    flex-flow: row wrap;
     transform: translateY(0px);
     transition: 1s;
+} 
+
+.modal .left-container{
+    width: 100%;
+    height: 100%;
+    max-width: 19rem;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.left-container .image{
+    position: absolute;
+    top: 170px;
+    right: -5px;
+    transform: scale(1.4);
+}
+
+.left-container .icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 29px;
+    top: 29px;
+}
+
+.box .close{
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0px;
+    top: -44px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal[typePokemonModal="grass"] .left-container{
@@ -585,52 +627,9 @@ button .fa-magnifying-glass{
 }
 
 
-
-.box .left-container{
-    width: 19.1rem;
-    height: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
-
-.box .close{
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    position: absolute;
-    right: 0px;
-    top: -44px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.left-container .icon{
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 29px;
-    top: 29px;
-}
-
-.left-container .image{
-    position: absolute;
-    top: 170px;
-    right: -5px;
-    transform: scale(1.4);
-
-}
-
 .right-container{
     padding: 35px 72px 29px 74px;
+    height: 100%;
 }
 
 .right-container .name{
@@ -789,12 +788,125 @@ button .fa-magnifying-glass{
     animation-fill-mode: forwards;
 }
 
+@media (max-width: 560px){
+    .modal{
+        align-items: flex-end;
+    }
+
+    .modal .box{
+        width: 100%;
+        height: 92%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 0px;
+
+    }
+
+    .modal .left-container{
+        max-width: 100%;
+        background-size: cover;
+        height: 15.5rem;
+    }
+    
+    .modal .right-container{
+        padding: 40px 10px 0px 10px
+    }
+
+    .left-container .image{
+        transform: scale(1.1);
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .left-container .icon{
+        top: 10px;
+        right: 10px;
+    }
+
+    .box .close{
+        top: -36px;
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    .status h5{
+        text-align: center;
+    }
+
+    .status .bar-status{
+        width: 19.3rem;
+    }
+
+    .status li{
+        margin-left: 35px;
+    } 
+
+    .status .item{
+        justify-content: space-around;
+    }
+
+    .modal .name{
+        justify-content: center;
+    }
+
+
+    .modal h2{
+        font-size: 24px;
+    }
+
+    .modal .type{
+        justify-content: center;
+    }
+
+    .modal .info{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .info li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .modal .weak{
+        margin-bottom: 1rem;
+    }
+
+    .weak h4{
+        text-align: center;
+    }
+
+    .weak li{
+        justify-content: space-between;
+    }
+
+    .weak li span{
+        margin: 10px 0px;
+        width: 75px;
+        font-size: 1.0em;
+    }
+
+
+}
+
+
 @keyframes show-modal{
     from{
-        transform: translateY(0px);
+        transform: translateY(400px);
     }
     to{
-        transform: translateY(-30px)
+        transform: translateY(0px)
     }
 }
 

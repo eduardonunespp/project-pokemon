@@ -20,3 +20,35 @@ footer .container{
 footer .container h3, p{
     color: #ffffff;
 }
+
+footer .container p{
+    font-size: 1.3em;
+}
+
+@media (max-width: 560px){
+    footer{
+        height: 200px;
+        padding: 0px 10px;
+    }
+
+    footer .container{
+        flex-direction: column;
+        height: 150px;
+
+    } 
+
+    .container .text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text h3{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .text p{
+        max-width: 300px;
+        font-size: 0.8em;
+    }
+}
