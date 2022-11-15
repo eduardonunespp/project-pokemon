@@ -269,6 +269,13 @@ button .fa-magnifying-glass{
     align-items: center;
     justify-content: center;
     position: relative;
+    
+}
+
+.card-pokemon .imgThumb{
+    max-width: 14.2rem ;
+    justify-content: center;
+    align-items: center;
 }
 
 .image:after{

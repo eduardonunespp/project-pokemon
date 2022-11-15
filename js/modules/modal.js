@@ -1,14 +1,12 @@
 
 export default function openModal(){
 
-}
-
     const cardPokemon = document.querySelectorAll('.js-open-detals-pokemon')
     const modal = document.querySelector('.modal')
     const close = document.querySelector('.modal .close')
     const box = document.querySelector('.modal .box')
 
-    console.log(cardPokemon)
+
 
         function showModal(event){
             event.preventDefault()
@@ -22,9 +20,14 @@ export default function openModal(){
 
     cardPokemon.forEach(card => {
         card.addEventListener('click', showModal)
+        console.log(card)
     })
 
     close.addEventListener('click', closeModal)
+
+}
+
+openModal()
 
 
     
