@@ -160,7 +160,7 @@ button .fa-magnifying-glass{
     line-height: 1.5em;
 }
 
-.eletric span{
+.electric span{
     color: var(--type-eletric);
     font-weight: 500;
     font-size: 15px;
@@ -168,7 +168,7 @@ button .fa-magnifying-glass{
 }
 
 .water span{
-    color: var(--type-waterl);
+    color: var(--type-water);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.5em;
