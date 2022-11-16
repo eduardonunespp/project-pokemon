@@ -61,8 +61,6 @@ import showDropdown from "./modules/dropdown.js"
         imgIcon.setAttribute('src', `img/icon-types/${type}.svg`)
         iconArea.appendChild(imgIcon)
 
-
-    
     }
 
 
@@ -97,7 +95,6 @@ import showDropdown from "./modules/dropdown.js"
                 
                         const cardPokemon = document.querySelectorAll('.js-open-detals-pokemon')
 
-                        
 
                         cardPokemon.forEach(card => {
                         card.addEventListener('click', openModal)
@@ -109,7 +106,7 @@ import showDropdown from "./modules/dropdown.js"
         })
     }
 
-    listingPokemons('https://pokeapi.co/api/v2/pokemon?limit=9&offset=0')
+    listingPokemons('https://pokeapi.co/api/v2/pokemon?limit=28&offset=0')
 
     
 

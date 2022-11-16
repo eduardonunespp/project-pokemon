@@ -20,10 +20,10 @@
     width: 100%;
     height: 30rem;
     position: absolute;
-    bottom: 0px;
+    bottom: -30rem;
     left: 0px;
     background-color: #EFF3F6;
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
 }
 
@@ -374,7 +374,7 @@
     }
 
     .slide-hero .swipper-slide::after{
-        height: 25rem;
+        height: 40rem;
     }
 
      .main-area .area-explore{
@@ -444,9 +444,8 @@
 
     .swiper-slide::after{
         height: 54rem;
-        bottom: -5.2rem;
+        bottom: -29.2rem;
         z-index: -1;
-        
     }
 
     .main-area .text p{
@@ -519,6 +518,10 @@
 
     .swiper-slide{
         z-index: 20000;
+    }
+
+    .slide-hero .swipper-slide::after{
+        height: 40rem;
     }
 
     
