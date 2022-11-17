@@ -221,24 +221,73 @@ console.log(selectArea)
         areaPokemons.innerHTML = ''
         btnLoadMore.style.display = 'none';
 
+        const sectionsPokemons = document.querySelector('.s-all-info-pokemons')
+        const topSection = sectionsPokemons.offsetTop
+    
+
+        window.scrollTo({
+            top: topSection + 288,
+            behavior: "smooth"
+        })
+
         allTtypes.forEach(type => {
             type.classList.remove('all')
         })
 
         this.classList.add('all')
         
+        if(idPokemon){
+            axios({
+                method: 'GET',
+                url: `https://pokeapi.co/api/v2/type/${idPokemon}`
+            })
+            .then(response => {
+                const {pokemon} = response.data
+                const numbersPokemons = document.querySelector('#js-count-pokemons')
+   
+                numbersPokemons.innerText = pokemon.length
+   
+              
+   
+                pokemon.forEach(pok => {
+                   const {url} = pok.pokemon
+                   
+   
+                   axios({
+                       method: 'GET',
+                       url: `${url}`
+                   })
+                   .then(response => {
+                       const {name, id, sprites, types} = response.data;
+   
+                       const infoCard = {
+                           nome: name, 
+                           code: id,
+                           imagePok: sprites.other.dream_world.front_default,
+                           type: types[0].type.name
+                       }
+   
+                       if(infoCard.imagePok){
+                           creatCardPokemon(infoCard.code, infoCard.type, infoCard.nome, infoCard.imagePok)    
+                       }
+   
+                           const cardPokemon = document.querySelectorAll('.js-open-detals-pokemon')
+   
+   
+                           cardPokemon.forEach(card => {
+                           card.addEventListener('click', openModal)
+                   })
+                })
+      
+            })
+           })
+        }else{
+            areaPokemons.innerHTML = "";
 
+            listingPokemons('https://pokeapi.co/api/v2/pokemon?limit=28&offset=0')
 
-         axios({
-             method: 'GET',
-             url: `https://pokeapi.co/api/v2/type/${idPokemon}`
-         })
-         .then(response => {
-             const pokeCount = response.data.pokemon.length
-             const numbersPokemons = document.querySelector('#js-count-pokemons')
+            btnLoadMore.style.display = "block"
+        }
 
-             numbersPokemons.innerText = pokeCount
-
-             
-         })
+        
     }
